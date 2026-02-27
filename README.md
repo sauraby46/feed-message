@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Feed-Message  
+### AI-Integrated Full Stack Messaging Platform built with Next.js
 
-## Getting Started
+Feed-Message is a production-ready full-stack messaging application built using Next.js (App Router).  
+The platform includes secure OTP-based authentication, AI-powered message capabilities, scalable MongoDB aggregation APIs, and a modern responsive dashboard.
 
-First, run the development server:
+This project demonstrates real-world implementation of authentication systems, backend API design, validation, database optimization, and AI integration in a modern web application.
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- Next.js (App Router)
+- React
+- ShadCN UI
+- React Hook Form
+
+**Backend**
+- Next.js API Routes
+- MongoDB
+- Aggregation Pipeline
+
+**Authentication**
+- Auth.js (NextAuth)
+- Custom OTP Verification System
+
+**Validation**
+- Zod (Schema-based validation)
+
+**Email Service**
+- Resend (OTP email delivery)
+
+**AI Integration**
+- AI-powered message generation / enhancement
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication & Security
+- Custom OTP-based user signup
+- Email verification with secure OTP
+- Unique username validation with debouncing
+- Auth.js session-based authentication
+- Protected routes and user dashboard access
+
+### 📩 Messaging System
+- Create, read, and delete messages
+- Optimized message retrieval using MongoDB Aggregation Pipeline
+- User-specific message dashboard
+- Backend delete route implementation
+
+### 📧 Email Workflow
+- OTP delivery using Resend email service
+- Verification flow integrated with backend API
+
+### 🤖 AI Integration
+- AI-powered message generation/enhancement
+- Server-side AI API integration inside Next.js
+
+### 🎨 UI/UX
+- Responsive dashboard design
+- ShadCN modern component library
+- Form validation with Zod + React Hook Form
+- Debounced real-time username availability check
+- Carousel integration
+
+---
+
+## 🧠 Key Learnings
+
+- Building a production-grade full-stack application with Next.js
+- Designing secure authentication workflows
+- Implementing schema validation for frontend and backend
+- Writing scalable APIs with MongoDB aggregation
+- Integrating third-party services (Email + AI APIs)
+- Managing environment variables and deployment-ready setup
+- Debugging and handling real-world feature iterations
+
+---
+
+## 📂 Project Structure Highlights
+
+- App Router architecture
+- Separation of Server & Client Components
+- Modular API route structure
+- Centralized database connection handling
+- Environment-based configuration management
+
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/sauraby46/feed-message.git
+cd feed-message
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Create .env.local file
+
+```bash
+MONGODB_URI=your_mongodb_connection_string
+AUTH_SECRET=your_auth_secret
+RESEND_API_KEY=your_resend_api_key
+OPENAI_API_KEY=your_openai_api_key
+```
+
+### 4️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
